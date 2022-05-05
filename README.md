@@ -12,3 +12,5 @@ new ThreadPoolExecutor()로 인스턴스를 만들고 있는 걸 확인할 수 �
 * newFixedThreadPool - new ThreadPoolExecutor(nThreads, nThreads, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue());
 * newSingleThreadExecutor - new ThreadPoolExecutor(1, 1,0L, TimeUnit.MILLISECONDS,new LinkedBlockingQueue());
 * CachedThreadPool - new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue());
+
+> new Thread()로 직접 스레드를 생성하는 방식은 JDK5 이후로는 권장하지 않는다고 한다.
